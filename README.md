@@ -15,11 +15,11 @@ This is a simple Terraform Linter CLI that checks your Terraform configuration f
 2. Install the Terraform Linter CLI package using pip:
 
 ```
-pip install simple-tf-linter
+pip install simpleTFLinter
 ```
 ## Usage
 
-After installing the `simple-tf-linter` package, you can use the `simple_tf_linter` command to run the linter.
+After installing the `simpleTFLinter` package, you can use the `simple_tf_linter` command to run the linter.
 
 1. Set up your rule YAML file with the desired rules. You can either create your own or use the default `.tf_linter_rule.yaml` provided in the `examples` directory.
 2. Run the Terraform Linter CLI using the following command:
