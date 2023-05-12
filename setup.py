@@ -8,7 +8,7 @@ with open("requirements.txt", "r") as f:
 
 setup(
     name="SimpleTFLinter",
-    version="0.1.0",
+    version="0.1.1",
     author="William Wang",
     author_email="williamwangatsydney@gmail.com",
     description="Simple Terraform Linter is a lightweight command-line tool for checking Terraform configuration files against custom rules. It supports input from Terraform folders or JSON files, with easy customization and extensibility through user-defined rules defined in YAML files.",

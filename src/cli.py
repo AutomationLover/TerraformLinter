@@ -27,15 +27,15 @@ def main():
     if args.rule_yaml:
         rule_yaml_path = os.path.abspath(args.rule_yaml)
     else:
-        current_folder_yaml = os.path.join('', '../examples/.tf_linter_rule.yaml')
-        home_folder_yaml = os.path.join(os.path.expanduser('~'), '../examples/.tf_linter_rule.yaml')
+        current_folder_yaml = os.path.join(os.getcwd(), '.tf_linter_rule.yaml')
+        home_folder_yaml = os.path.join(os.path.expanduser('~'), '/.tf_linter_rule.yaml')
         if os.path.exists(current_folder_yaml):
             rule_yaml_path = os.path.abspath(current_folder_yaml)
         elif os.path.exists(home_folder_yaml):
             rule_yaml_path = home_folder_yaml
         else:
             raise FileNotFoundError('.tf_linter_rule.yaml file not found in the current folder or ~/.')
-
+        
     # Print the paths for demonstration purposes
     print("Input Path:", input_path)
     print("Rule YAML Path:", rule_yaml_path)
